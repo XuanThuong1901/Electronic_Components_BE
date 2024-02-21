@@ -1,0 +1,1819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="DBLinhKienDienTu@DESKTOP-HAE7JHJ">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.21">
+    <root id="1">
+      <ServerVersion>12.0.4522</ServerVersion>
+      <PermissionsCheckSum>43305946824</PermissionsCheckSum>
+      <Grants>2|||2|connect|G
+3|||2|connect|G
+4|||2|connect|G
+5|||2|connect|G
+0|root||263|alter any availability group|G
+0|root||102|authenticate server|G
+0|root||103|authenticate server|G
+0|root||1|connect sql|G
+0|root||257|connect sql|G
+0|root||259|connect sql|G
+0|root||260|connect sql|G
+0|root||261|connect sql|G
+0|root||262|connect sql|G
+0|root||263|connect sql|G
+0|root||264|connect sql|G
+0|root||265|connect sql|G
+0|root||268|connect sql|G
+0|root||269|connect sql|G
+0|root||272|connect sql|G
+0|root||273|connect sql|G
+0|root||105|control server|G
+0|root||2|view any database|G
+0|root||101|view any definition|G
+0|root||102|view any definition|G
+0|root||105|view any definition|G
+0|root||106|view any definition|G
+0|root||257|view any definition|G
+0|root||102|view server state|G
+0|root||257|view server state|G
+0|root||263|view server state|G</Grants>
+    </root>
+    <database id="2" parent="1" name="DBLinhKienDienTu">
+      <ObjectId>7</ObjectId>
+      <PermissionsCheckSum>1059020366</PermissionsCheckSum>
+      <Grants>7|database||1|connect|G</Grants>
+      <Current>1</Current>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Fingerprint>7.45120/E884AF01-1E21-4522-9991-E6B1111755FF@DESKTOP-HAE7JHJ</Fingerprint>
+    </database>
+    <database id="3" parent="1" name="NGANHANG">
+      <ObjectId>8</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="4" parent="1" name="ReportServer">
+      <ObjectId>5</ObjectId>
+      <Collation>Latin1_General_CI_AS_KS_WS</Collation>
+    </database>
+    <database id="5" parent="1" name="ReportServerTempDB">
+      <ObjectId>6</ObjectId>
+      <Collation>Latin1_General_CI_AS_KS_WS</Collation>
+    </database>
+    <database id="6" parent="1" name="distribution">
+      <ObjectId>9</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="8" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="9" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="10" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <login id="11" parent="1" name="sa">
+      <ObjectId>1</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="12" parent="1" name="public">
+      <ObjectId>2</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="13" parent="1" name="sysadmin">
+      <ObjectId>3</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="14" parent="1" name="securityadmin">
+      <ObjectId>4</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="15" parent="1" name="serveradmin">
+      <ObjectId>5</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="16" parent="1" name="setupadmin">
+      <ObjectId>6</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="17" parent="1" name="processadmin">
+      <ObjectId>7</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="18" parent="1" name="diskadmin">
+      <ObjectId>8</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="19" parent="1" name="dbcreator">
+      <ObjectId>9</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="20" parent="1" name="bulkadmin">
+      <ObjectId>10</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="21" parent="1" name="##MS_SQLResourceSigningCertificate##">
+      <ObjectId>101</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="22" parent="1" name="##MS_SQLReplicationSigningCertificate##">
+      <ObjectId>102</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="23" parent="1" name="##MS_SQLAuthenticatorCertificate##">
+      <ObjectId>103</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="24" parent="1" name="##MS_PolicySigningCertificate##">
+      <ObjectId>105</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="25" parent="1" name="##MS_SmoExtendedSigningCertificate##">
+      <ObjectId>106</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="26" parent="1" name="##MS_PolicyTsqlExecutionLogin##">
+      <ObjectId>257</ObjectId>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="27" parent="1" name="DESKTOP-HAE7JHJ\NXThuong">
+      <ObjectId>259</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="28" parent="1" name="NT SERVICE\SQLWriter">
+      <ObjectId>260</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="29" parent="1" name="NT SERVICE\Winmgmt">
+      <ObjectId>261</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="30" parent="1" name="NT Service\MSSQLSERVER">
+      <ObjectId>262</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="31" parent="1" name="NT AUTHORITY\SYSTEM">
+      <ObjectId>263</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="32" parent="1" name="NT SERVICE\SQLSERVERAGENT">
+      <ObjectId>264</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="33" parent="1" name="NT SERVICE\ReportServer">
+      <ObjectId>265</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="34" parent="1" name="##MS_PolicyEventProcessingLogin##">
+      <ObjectId>268</ObjectId>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="35" parent="1" name="##MS_AgentSigningCertificate##">
+      <ObjectId>269</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="36" parent="1" name="distributor_admin">
+      <ObjectId>272</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="37" parent="1" name="HTKN">
+      <ObjectId>273</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <schema id="38" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="39" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="40" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="41" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="42" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="43" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="44" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="45" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="46" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="47" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="48" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <PermissionsCheckSum>18319248321</PermissionsCheckSum>
+      <Grants>1413580074|||0|execute|G
+1413580074|||2|execute|D
+1429580131|||0|execute|G
+1429580131|||2|execute|D
+1445580188|||0|execute|G
+1445580188|||2|execute|D
+1461580245|||0|execute|G
+1461580245|||2|execute|D
+1477580302|||0|execute|G
+1477580302|||2|execute|D
+1493580359|||0|execute|G
+1493580359|||2|execute|D
+1509580416|||0|execute|G
+1509580416|||2|execute|D</Grants>
+      <IntrospectionTimestamp>2023-07-26.18:24:50.470</IntrospectionTimestamp>
+      <Current>1</Current>
+      <DescriptionsCheckSum>7296818636</DescriptionsCheckSum>
+    </schema>
+    <schema id="49" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="50" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <role id="51" parent="2" name="public">
+      <ObjectId>0</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="52" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <Type>windows-user</Type>
+      <DefaultSchema>dbo</DefaultSchema>
+      <AuthType>windows</AuthType>
+    </role>
+    <role id="53" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+      <DefaultSchema>guest</DefaultSchema>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="54" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="55" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="56" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="57" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="58" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="59" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="60" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="61" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="62" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="63" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="64" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <table id="65" parent="48" name="accounts">
+      <ObjectId>245575913</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-15.11:45:38.867</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-19.18:34:07.577</ModifiedTimestamp>
+    </table>
+    <table id="66" parent="48" name="carts">
+      <ObjectId>277576027</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.870</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-26.18:22:21.267</ModifiedTimestamp>
+    </table>
+    <table id="67" parent="48" name="categories">
+      <ObjectId>1525580473</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-19.04:21:07.827</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.260</ModifiedTimestamp>
+    </table>
+    <table id="68" parent="48" name="customers">
+      <ObjectId>341576255</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-15.11:45:38.870</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.940</ModifiedTimestamp>
+    </table>
+    <table id="69" parent="48" name="detail_import_stocks">
+      <ObjectId>373576369</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-15.11:45:38.873</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.523</ModifiedTimestamp>
+    </table>
+    <table id="70" parent="48" name="detail_orders">
+      <ObjectId>405576483</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.873</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:13.330</ModifiedTimestamp>
+    </table>
+    <table id="71" parent="48" name="employers">
+      <ObjectId>437576597</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-15.11:45:38.877</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-26.18:22:21.270</ModifiedTimestamp>
+    </table>
+    <table id="72" parent="48" name="evaluations">
+      <ObjectId>469576711</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-15.11:45:38.877</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:13.153</ModifiedTimestamp>
+    </table>
+    <table id="73" parent="48" name="image_products">
+      <ObjectId>66099276</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-19.21:24:00.703</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.873</ModifiedTimestamp>
+    </table>
+    <table id="74" parent="48" name="import_stocks">
+      <ObjectId>533576939</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-15.11:45:38.880</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-26.18:22:21.273</ModifiedTimestamp>
+    </table>
+    <table id="75" parent="48" name="orders">
+      <ObjectId>565577053</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-15.11:45:38.883</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-19.18:34:07.407</ModifiedTimestamp>
+    </table>
+    <table id="76" parent="48" name="payments">
+      <ObjectId>597577167</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.883</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.943</ModifiedTimestamp>
+    </table>
+    <table id="77" parent="48" name="price_list">
+      <ObjectId>629577281</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-15.11:45:38.887</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-26.18:22:21.277</ModifiedTimestamp>
+    </table>
+    <table id="78" parent="48" name="products">
+      <ObjectId>546100986</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-21.17:27:12.153</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.22:22:28.950</ModifiedTimestamp>
+    </table>
+    <table id="79" parent="48" name="roles">
+      <ObjectId>693577509</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.890</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.923</ModifiedTimestamp>
+    </table>
+    <table id="80" parent="48" name="shipping_units">
+      <ObjectId>725577623</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-15.11:45:38.890</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.947</ModifiedTimestamp>
+    </table>
+    <table id="81" parent="48" name="specifications">
+      <ObjectId>114099447</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-19.21:44:22.033</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.757</ModifiedTimestamp>
+    </table>
+    <table id="82" parent="48" name="status">
+      <ObjectId>1573580644</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-19.18:34:07.143</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-19.18:34:07.573</ModifiedTimestamp>
+    </table>
+    <table id="83" parent="48" name="suppliers">
+      <ObjectId>738101670</ObjectId>
+      <Outdated>1</Outdated>
+      <CreatedTimestamp>2023-07-21.17:33:19.967</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:33:20.337</ModifiedTimestamp>
+    </table>
+    <table id="84" parent="48" name="sysdiagrams">
+      <ObjectId>1365579903</ObjectId>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2023-07-15.11:45:54.780</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:54.780</ModifiedTimestamp>
+    </table>
+    <table id="85" parent="48" name="tax">
+      <ObjectId>853578079</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.897</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.257</ModifiedTimestamp>
+    </table>
+    <routine id="86" parent="48" name="fn_diagramobjects">
+      <ObjectId>1509580416</ObjectId>
+      <SourceTextLength>1647</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2023-07-15.11:45:54.810</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:54.810</ModifiedTimestamp>
+      <RoutineType>scalar-fun</RoutineType>
+    </routine>
+    <routine id="87" parent="48" name="sp_alterdiagram">
+      <ObjectId>1477580302</ObjectId>
+      <SourceTextLength>1501</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2023-07-15.11:45:54.783</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:54.783</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="88" parent="48" name="sp_creatediagram">
+      <ObjectId>1445580188</ObjectId>
+      <SourceTextLength>1223</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2023-07-15.11:45:54.783</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:54.783</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="89" parent="48" name="sp_dropdiagram">
+      <ObjectId>1493580359</ObjectId>
+      <SourceTextLength>896</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2023-07-15.11:45:54.810</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:54.810</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="90" parent="48" name="sp_helpdiagramdefinition">
+      <ObjectId>1429580131</ObjectId>
+      <SourceTextLength>921</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2023-07-15.11:45:54.780</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:54.780</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="91" parent="48" name="sp_helpdiagrams">
+      <ObjectId>1413580074</ObjectId>
+      <SourceTextLength>658</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2023-07-15.11:45:54.780</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:54.780</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="92" parent="48" name="sp_renamediagram">
+      <ObjectId>1461580245</ObjectId>
+      <SourceTextLength>1721</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2023-07-15.11:45:54.783</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:54.783</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="93" parent="48" name="sp_upgraddiagrams">
+      <ObjectId>1349579846</ObjectId>
+      <SourceTextLength>1463</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2023-07-15.11:45:54.780</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:54.780</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <column id="94" parent="65" name="idaccount">
+      <Position>1</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="95" parent="65" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="96" parent="65" name="password">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="97" parent="65" name="idrole">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="65" name="idstatus">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="99" parent="65" name="PK__accounts__EC2D5A6F1D959EB5">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idaccount</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="100" parent="65" name="UK_n7ihswpy07ci568w34q0oi8he">
+      <Position>2</Position>
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="101" parent="65" name="PK__accounts__EC2D5A6F1D959EB5">
+      <ObjectId>261575970</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.867</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.867</ModifiedTimestamp>
+      <ColNames>idaccount</ColNames>
+      <UnderlyingIndexName>PK__accounts__EC2D5A6F1D959EB5</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="102" parent="65" name="UK_n7ihswpy07ci568w34q0oi8he">
+      <ObjectId>885578193</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.903</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.903</ModifiedTimestamp>
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>UK_n7ihswpy07ci568w34q0oi8he</UnderlyingIndexName>
+    </key>
+    <foreign-key id="103" parent="65" name="FKcswakwt4ivxc68xdw3ud41qfx">
+      <ObjectId>901578250</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.923</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.923</ModifiedTimestamp>
+      <ColNames>idrole</ColNames>
+      <RefTableId>693577509</RefTableId>
+      <RefTableName>roles</RefTableName>
+      <RefKeyName>PK__roles__F324A06D72047947</RefKeyName>
+      <RefColNames>idrole</RefColNames>
+    </foreign-key>
+    <foreign-key id="104" parent="65" name="FK15lrtdvn3r2hygjhwgyyycqc">
+      <ObjectId>1637580872</ObjectId>
+      <CreatedTimestamp>2023-07-19.18:34:07.573</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-19.18:34:07.573</ModifiedTimestamp>
+      <ColNames>idstatus</ColNames>
+      <RefTableId>1573580644</RefTableId>
+      <RefTableName>status</RefTableName>
+      <RefKeyName>PK__status__EBF77C2DDD0AF179</RefKeyName>
+      <RefColNames>idstatus</RefColNames>
+    </foreign-key>
+    <column id="105" parent="66" name="idcustomer">
+      <Position>1</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="106" parent="66" name="idproduct">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="107" parent="66" name="quantity">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="108" parent="66" name="status">
+      <Position>4</Position>
+      <DataType>bit|0s</DataType>
+    </column>
+    <column id="109" parent="66" name="updated_date">
+      <Position>5</Position>
+      <DataType>datetime2(6 digit)|0s</DataType>
+    </column>
+    <index id="110" parent="66" name="PK__carts__0B3AD7E45BA1ED80">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idcustomer
+idproduct</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="111" parent="66" name="PK__carts__0B3AD7E45BA1ED80">
+      <ObjectId>293576084</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.870</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.870</ModifiedTimestamp>
+      <ColNames>idcustomer
+idproduct</ColNames>
+      <UnderlyingIndexName>PK__carts__0B3AD7E45BA1ED80</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="112" parent="66" name="FKji149erisg4l2pcdydbiogcv9">
+      <ObjectId>933578364</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.923</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.923</ModifiedTimestamp>
+      <ColNames>idcustomer</ColNames>
+      <RefTableId>341576255</RefTableId>
+      <RefTableName>customers</RefTableName>
+      <RefKeyName>PK__customer__53EFD0A678D0A8AD</RefKeyName>
+      <RefColNames>idcustomer</RefColNames>
+    </foreign-key>
+    <foreign-key id="113" parent="66" name="FK43uch6wc7lgnwma5dowgmj9dr">
+      <ObjectId>642101328</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:27:12.600</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.600</ModifiedTimestamp>
+      <ColNames>idproduct</ColNames>
+      <RefTableId>546100986</RefTableId>
+      <RefTableName>products</RefTableName>
+      <RefKeyName>PK__products__8D507424ABCB9105</RefKeyName>
+      <RefColNames>idproduct</RefColNames>
+    </foreign-key>
+    <column id="114" parent="67" name="idcategory">
+      <Position>1</Position>
+      <SequenceIdentity>1(34)</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="115" parent="67" name="category_name">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <column id="116" parent="67" name="level">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="117" parent="67" name="origin">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="118" parent="67" name="PK__categori__78C6B76249C41776">
+      <Position>1</Position>
+      <ColNames>idcategory</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="119" parent="67" name="PK__categori__78C6B76249C41776">
+      <ObjectId>1541580530</ObjectId>
+      <CreatedTimestamp>2023-07-19.04:21:07.907</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-19.04:21:07.907</ModifiedTimestamp>
+      <ColNames>idcategory</ColNames>
+      <UnderlyingIndexName>PK__categori__78C6B76249C41776</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="120" parent="68" name="idcustomer">
+      <Position>1</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="121" parent="68" name="address">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="122" parent="68" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="123" parent="68" name="telephone">
+      <Position>4</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="124" parent="68" name="PK__customer__53EFD0A678D0A8AD">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idcustomer</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="125" parent="68" name="PK__customer__53EFD0A678D0A8AD">
+      <ObjectId>357576312</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.873</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.873</ModifiedTimestamp>
+      <ColNames>idcustomer</ColNames>
+      <UnderlyingIndexName>PK__customer__53EFD0A678D0A8AD</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="126" parent="68" name="FKn4xs3hsmehck0r8g1jc9g2vl">
+      <ObjectId>965578478</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.927</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.927</ModifiedTimestamp>
+      <ColNames>idcustomer</ColNames>
+      <RefTableId>245575913</RefTableId>
+      <RefTableName>accounts</RefTableName>
+      <RefKeyName>PK__accounts__EC2D5A6F1D959EB5</RefKeyName>
+      <RefColNames>idaccount</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="127" parent="69" name="idimport_stock">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="128" parent="69" name="idproduct">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="129" parent="69" name="price">
+      <Position>3</Position>
+      <DataType>numeric(38,2)|0s</DataType>
+    </column>
+    <column id="130" parent="69" name="quantity">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="131" parent="69" name="PK__detail_i__8462A9D16FA79BCC">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idimport_stock
+idproduct</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="132" parent="69" name="PK__detail_i__8462A9D16FA79BCC">
+      <ObjectId>389576426</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.873</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.873</ModifiedTimestamp>
+      <ColNames>idimport_stock
+idproduct</ColNames>
+      <UnderlyingIndexName>PK__detail_i__8462A9D16FA79BCC</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="133" parent="69" name="FKptu34041x8x5h10umleauc3qg">
+      <ObjectId>981578535</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.930</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.930</ModifiedTimestamp>
+      <ColNames>idimport_stock</ColNames>
+      <RefTableId>533576939</RefTableId>
+      <RefTableName>import_stocks</RefTableName>
+      <RefKeyName>PK__import_s__DCB7AE932610C082</RefKeyName>
+      <RefColNames>idimport_stock</RefColNames>
+    </foreign-key>
+    <foreign-key id="134" parent="69" name="FKly1j9f24q1vy73gb31hoccbil">
+      <ObjectId>626101271</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:27:12.520</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.520</ModifiedTimestamp>
+      <ColNames>idproduct</ColNames>
+      <RefTableId>546100986</RefTableId>
+      <RefTableName>products</RefTableName>
+      <RefKeyName>PK__products__8D507424ABCB9105</RefKeyName>
+      <RefColNames>idproduct</RefColNames>
+    </foreign-key>
+    <column id="135" parent="70" name="idorder">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="136" parent="70" name="idproduct">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="137" parent="70" name="line_amount">
+      <Position>3</Position>
+      <DataType>numeric(38,2)|0s</DataType>
+    </column>
+    <column id="138" parent="70" name="price">
+      <Position>4</Position>
+      <DataType>numeric(38,2)|0s</DataType>
+    </column>
+    <column id="139" parent="70" name="quantity">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="140" parent="70" name="idtax">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="141" parent="70" name="PK__detail_o__1C09CAE8126A901E">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idorder
+idproduct</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="142" parent="70" name="PK__detail_o__1C09CAE8126A901E">
+      <ObjectId>421576540</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.873</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.873</ModifiedTimestamp>
+      <ColNames>idorder
+idproduct</ColNames>
+      <UnderlyingIndexName>PK__detail_o__1C09CAE8126A901E</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="143" parent="70" name="FKl52ql1oyc0o1figl52klq2d8q">
+      <ObjectId>1013578649</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.930</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.930</ModifiedTimestamp>
+      <ColNames>idorder</ColNames>
+      <RefTableId>565577053</RefTableId>
+      <RefTableName>orders</RefTableName>
+      <RefKeyName>PK__orders__44DCCDAA63F43549</RefKeyName>
+      <RefColNames>idorder</RefColNames>
+    </foreign-key>
+    <foreign-key id="144" parent="70" name="FK4uha8389i8uv0lhwim8pcgtja">
+      <ObjectId>722101613</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:27:13.327</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:13.327</ModifiedTimestamp>
+      <ColNames>idproduct</ColNames>
+      <RefTableId>546100986</RefTableId>
+      <RefTableName>products</RefTableName>
+      <RefKeyName>PK__products__8D507424ABCB9105</RefKeyName>
+      <RefColNames>idproduct</RefColNames>
+    </foreign-key>
+    <foreign-key id="145" parent="70" name="FK7xpm1am0vrc13emnshlfe8i0r">
+      <ObjectId>1045578763</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.933</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.933</ModifiedTimestamp>
+      <ColNames>idtax</ColNames>
+      <RefTableId>853578079</RefTableId>
+      <RefTableName>tax</RefTableName>
+      <RefKeyName>PK__tax__2A4169933B1779D4</RefKeyName>
+      <RefColNames>idtax</RefColNames>
+    </foreign-key>
+    <column id="146" parent="71" name="idemployer">
+      <Position>1</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="147" parent="71" name="address">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="148" parent="71" name="avatar">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="149" parent="71" name="birthday">
+      <Position>4</Position>
+      <DataType>datetime2(6 digit)|0s</DataType>
+    </column>
+    <column id="150" parent="71" name="gender">
+      <Position>5</Position>
+      <DataType>bit|0s</DataType>
+    </column>
+    <column id="151" parent="71" name="identity_card">
+      <Position>6</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="152" parent="71" name="name">
+      <Position>7</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="153" parent="71" name="telephone">
+      <Position>8</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="154" parent="71" name="PK__employer__CF8A4D576096F856">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idemployer</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="155" parent="71" name="PK__employer__CF8A4D576096F856">
+      <ObjectId>453576654</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.877</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.877</ModifiedTimestamp>
+      <ColNames>idemployer</ColNames>
+      <UnderlyingIndexName>PK__employer__CF8A4D576096F856</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="156" parent="71" name="FK50ij4dqngp8xdhjt0gh7mwa5">
+      <ObjectId>1061578820</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.933</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.933</ModifiedTimestamp>
+      <ColNames>idemployer</ColNames>
+      <RefTableId>245575913</RefTableId>
+      <RefTableName>accounts</RefTableName>
+      <RefKeyName>PK__accounts__EC2D5A6F1D959EB5</RefKeyName>
+      <RefColNames>idaccount</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="157" parent="72" name="idevaluation">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="158" parent="72" name="contents">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="159" parent="72" name="evaluate">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="160" parent="72" name="idcustomer">
+      <Position>4</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="161" parent="72" name="idproduct">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="162" parent="72" name="PK__evaluati__846E8792C3CD4E74">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idevaluation</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="163" parent="72" name="PK__evaluati__846E8792C3CD4E74">
+      <ObjectId>485576768</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.877</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.877</ModifiedTimestamp>
+      <ColNames>idevaluation</ColNames>
+      <UnderlyingIndexName>PK__evaluati__846E8792C3CD4E74</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="164" parent="72" name="FKo4ff3pnsd598sim7ba8ump2uc">
+      <ObjectId>1077578877</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.937</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.937</ModifiedTimestamp>
+      <ColNames>idcustomer</ColNames>
+      <RefTableId>341576255</RefTableId>
+      <RefTableName>customers</RefTableName>
+      <RefKeyName>PK__customer__53EFD0A678D0A8AD</RefKeyName>
+      <RefColNames>idcustomer</RefColNames>
+    </foreign-key>
+    <foreign-key id="165" parent="72" name="FK7q1hqum06eblcpue6qkf2lf45">
+      <ObjectId>706101556</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:27:13.150</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:13.150</ModifiedTimestamp>
+      <ColNames>idproduct</ColNames>
+      <RefTableId>546100986</RefTableId>
+      <RefTableName>products</RefTableName>
+      <RefKeyName>PK__products__8D507424ABCB9105</RefKeyName>
+      <RefColNames>idproduct</RefColNames>
+    </foreign-key>
+    <column id="166" parent="73" name="idimg_product">
+      <Position>1</Position>
+      <SequenceIdentity>1(17)</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="167" parent="73" name="urlimg">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="168" parent="73" name="idproduct">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="169" parent="73" name="PK__image_pr__C25744B6834404D4">
+      <Position>1</Position>
+      <ColNames>idimg_product</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="170" parent="73" name="PK__image_pr__C25744B6834404D4">
+      <ObjectId>82099333</ObjectId>
+      <CreatedTimestamp>2023-07-19.21:24:00.737</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-19.21:24:00.737</ModifiedTimestamp>
+      <ColNames>idimg_product</ColNames>
+      <UnderlyingIndexName>PK__image_pr__C25744B6834404D4</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="171" parent="73" name="FKkhf1gh84037ahkscpo8gapck3">
+      <ObjectId>674101442</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:27:12.870</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.870</ModifiedTimestamp>
+      <ColNames>idproduct</ColNames>
+      <RefTableId>546100986</RefTableId>
+      <RefTableName>products</RefTableName>
+      <RefKeyName>PK__products__8D507424ABCB9105</RefKeyName>
+      <RefColNames>idproduct</RefColNames>
+    </foreign-key>
+    <column id="172" parent="74" name="idimport_stock">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="173" parent="74" name="contents">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="174" parent="74" name="date_added">
+      <Position>3</Position>
+      <DataType>datetime2(6 digit)|0s</DataType>
+    </column>
+    <column id="175" parent="74" name="import_stock_name">
+      <Position>4</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="176" parent="74" name="updated_date">
+      <Position>5</Position>
+      <DataType>datetime2(6 digit)|0s</DataType>
+    </column>
+    <column id="177" parent="74" name="idemployer">
+      <Position>6</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="178" parent="74" name="idstatus">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="179" parent="74" name="idsupplier">
+      <Position>8</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="180" parent="74" name="PK__import_s__DCB7AE932610C082">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idimport_stock</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="181" parent="74" name="PK__import_s__DCB7AE932610C082">
+      <ObjectId>549576996</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.880</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.880</ModifiedTimestamp>
+      <ColNames>idimport_stock</ColNames>
+      <UnderlyingIndexName>PK__import_s__DCB7AE932610C082</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="182" parent="74" name="FKb33o523hlpwimi0rwy2qf9xie">
+      <ObjectId>1125579048</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.940</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.940</ModifiedTimestamp>
+      <ColNames>idemployer</ColNames>
+      <RefTableId>437576597</RefTableId>
+      <RefTableName>employers</RefTableName>
+      <RefKeyName>PK__employer__CF8A4D576096F856</RefKeyName>
+      <RefColNames>idemployer</RefColNames>
+    </foreign-key>
+    <foreign-key id="183" parent="74" name="FKga5i9l0r1wsvvdrxaf9bbj9dt">
+      <ObjectId>1621580815</ObjectId>
+      <CreatedTimestamp>2023-07-19.18:34:07.490</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-19.18:34:07.490</ModifiedTimestamp>
+      <ColNames>idstatus</ColNames>
+      <RefTableId>1573580644</RefTableId>
+      <RefTableName>status</RefTableName>
+      <RefKeyName>PK__status__EBF77C2DDD0AF179</RefKeyName>
+      <RefColNames>idstatus</RefColNames>
+    </foreign-key>
+    <foreign-key id="184" parent="74" name="FKi7v0gf7cfrnrljl85aewriw03">
+      <ObjectId>770101784</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:33:20.290</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:33:20.290</ModifiedTimestamp>
+      <ColNames>idsupplier</ColNames>
+      <RefTableId>738101670</RefTableId>
+      <RefTableName>suppliers</RefTableName>
+      <RefKeyName>PK__supplier__43C586DDEB2E4CD8</RefKeyName>
+      <RefColNames>idsupplier</RefColNames>
+    </foreign-key>
+    <column id="185" parent="75" name="idorder">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="186" parent="75" name="address">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="187" parent="75" name="amount">
+      <Position>3</Position>
+      <DataType>numeric(38,2)|0s</DataType>
+    </column>
+    <column id="188" parent="75" name="discount_amount">
+      <Position>4</Position>
+      <DataType>numeric(38,2)|0s</DataType>
+    </column>
+    <column id="189" parent="75" name="note">
+      <Position>5</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="190" parent="75" name="shipping_fee">
+      <Position>6</Position>
+      <DataType>numeric(38,2)|0s</DataType>
+    </column>
+    <column id="191" parent="75" name="tax_amount">
+      <Position>7</Position>
+      <DataType>numeric(38,2)|0s</DataType>
+    </column>
+    <column id="192" parent="75" name="telephone">
+      <Position>8</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="193" parent="75" name="idcustomer">
+      <Position>9</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="194" parent="75" name="idemployer">
+      <Position>10</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="195" parent="75" name="idpayment">
+      <Position>11</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="196" parent="75" name="idshipping_unit">
+      <Position>12</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="197" parent="75" name="idstatus">
+      <Position>13</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="198" parent="75" name="PK__orders__44DCCDAA63F43549">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idorder</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="199" parent="75" name="PK__orders__44DCCDAA63F43549">
+      <ObjectId>581577110</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.883</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.883</ModifiedTimestamp>
+      <ColNames>idorder</ColNames>
+      <UnderlyingIndexName>PK__orders__44DCCDAA63F43549</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="200" parent="75" name="FKkqvbygxdxkdpg4uko2qdvempo">
+      <ObjectId>1173579219</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.940</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.940</ModifiedTimestamp>
+      <ColNames>idcustomer</ColNames>
+      <RefTableId>341576255</RefTableId>
+      <RefTableName>customers</RefTableName>
+      <RefKeyName>PK__customer__53EFD0A678D0A8AD</RefKeyName>
+      <RefColNames>idcustomer</RefColNames>
+    </foreign-key>
+    <foreign-key id="201" parent="75" name="FKjofkj5nx3drptg2j9rjd7etu4">
+      <ObjectId>1189579276</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.943</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.943</ModifiedTimestamp>
+      <ColNames>idemployer</ColNames>
+      <RefTableId>437576597</RefTableId>
+      <RefTableName>employers</RefTableName>
+      <RefKeyName>PK__employer__CF8A4D576096F856</RefKeyName>
+      <RefColNames>idemployer</RefColNames>
+    </foreign-key>
+    <foreign-key id="202" parent="75" name="FKhly8nu0tdtj6cp0xt7s9wuj9k">
+      <ObjectId>1205579333</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.943</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.943</ModifiedTimestamp>
+      <ColNames>idpayment</ColNames>
+      <RefTableId>597577167</RefTableId>
+      <RefTableName>payments</RefTableName>
+      <RefKeyName>PK__payments__64452FA5C5714951</RefKeyName>
+      <RefColNames>idpayment</RefColNames>
+    </foreign-key>
+    <foreign-key id="203" parent="75" name="FK8a60mqw79vkyc95v3gxwclox">
+      <ObjectId>1221579390</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.947</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.947</ModifiedTimestamp>
+      <ColNames>idshipping_unit</ColNames>
+      <RefTableId>725577623</RefTableId>
+      <RefTableName>shipping_units</RefTableName>
+      <RefKeyName>PK__shipping__8D88A8F40EF10661</RefKeyName>
+      <RefColNames>idshipping_unit</RefColNames>
+    </foreign-key>
+    <foreign-key id="204" parent="75" name="FKf4b631qbjybppssdy033qe2li">
+      <ObjectId>1605580758</ObjectId>
+      <CreatedTimestamp>2023-07-19.18:34:07.403</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-19.18:34:07.403</ModifiedTimestamp>
+      <ColNames>idstatus</ColNames>
+      <RefTableId>1573580644</RefTableId>
+      <RefTableName>status</RefTableName>
+      <RefKeyName>PK__status__EBF77C2DDD0AF179</RefKeyName>
+      <RefColNames>idstatus</RefColNames>
+    </foreign-key>
+    <column id="205" parent="76" name="idpayment">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="206" parent="76" name="contents">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="207" parent="76" name="payment_name">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="208" parent="76" name="PK__payments__64452FA5C5714951">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idpayment</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="209" parent="76" name="UK_rn2pfalttng0crjse6g5oigds">
+      <Position>2</Position>
+      <ColNames>payment_name</ColNames>
+      <Unique>1</Unique>
+      <Condition>[payment_name] IS NOT NULL</Condition>
+    </index>
+    <key id="210" parent="76" name="PK__payments__64452FA5C5714951">
+      <ObjectId>613577224</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.883</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.883</ModifiedTimestamp>
+      <ColNames>idpayment</ColNames>
+      <UnderlyingIndexName>PK__payments__64452FA5C5714951</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="211" parent="77" name="idprice">
+      <Position>1</Position>
+      <SequenceIdentity>1(35)</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="212" parent="77" name="applicable_date">
+      <Position>2</Position>
+      <DataType>datetime2(6 digit)|0s</DataType>
+    </column>
+    <column id="213" parent="77" name="price">
+      <Position>3</Position>
+      <DataType>numeric(38,2)|0s</DataType>
+    </column>
+    <column id="214" parent="77" name="status">
+      <Position>4</Position>
+      <DataType>bit|0s</DataType>
+    </column>
+    <column id="215" parent="77" name="type">
+      <Position>5</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="216" parent="77" name="update_date">
+      <Position>6</Position>
+      <DataType>datetime2(6 digit)|0s</DataType>
+    </column>
+    <column id="217" parent="77" name="idemployer">
+      <Position>7</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="218" parent="77" name="idproduct">
+      <Position>8</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="219" parent="77" name="PK__price_li__7D736777FE4DA06A">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idprice</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="220" parent="77" name="PK__price_li__7D736777FE4DA06A">
+      <ObjectId>645577338</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.887</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.887</ModifiedTimestamp>
+      <ColNames>idprice</ColNames>
+      <UnderlyingIndexName>PK__price_li__7D736777FE4DA06A</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="221" parent="77" name="FKehh0oiwi8r9chgtfpovuwpadi">
+      <ObjectId>1253579504</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:38.947</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.947</ModifiedTimestamp>
+      <ColNames>idemployer</ColNames>
+      <RefTableId>437576597</RefTableId>
+      <RefTableName>employers</RefTableName>
+      <RefKeyName>PK__employer__CF8A4D576096F856</RefKeyName>
+      <RefColNames>idemployer</RefColNames>
+    </foreign-key>
+    <foreign-key id="222" parent="77" name="FKo01a3rv2eelrshj797qb5s6vu">
+      <ObjectId>690101499</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:27:13.007</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:13.007</ModifiedTimestamp>
+      <ColNames>idproduct</ColNames>
+      <RefTableId>546100986</RefTableId>
+      <RefTableName>products</RefTableName>
+      <RefKeyName>PK__products__8D507424ABCB9105</RefKeyName>
+      <RefColNames>idproduct</RefColNames>
+    </foreign-key>
+    <column id="223" parent="78" name="idproduct">
+      <Position>1</Position>
+      <SequenceIdentity>1(25)</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="224" parent="78" name="contents">
+      <Position>2</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <column id="225" parent="78" name="feature">
+      <Position>3</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <column id="226" parent="78" name="guarantee">
+      <Position>4</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="227" parent="78" name="product_name">
+      <Position>5</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="228" parent="78" name="quantity">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="229" parent="78" name="idcategory">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="230" parent="78" name="idsupplier">
+      <Position>8</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="231" parent="78" name="idtax">
+      <Position>9</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="232" parent="78" name="PK__products__8D507424ABCB9105">
+      <Position>1</Position>
+      <ColNames>idproduct</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="233" parent="78" name="PK__products__8D507424ABCB9105">
+      <ObjectId>562101043</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:27:12.253</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.253</ModifiedTimestamp>
+      <ColNames>idproduct</ColNames>
+      <UnderlyingIndexName>PK__products__8D507424ABCB9105</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="234" parent="78" name="FKo1xkk3ehwlj7m9fcckrwqdh0w">
+      <ObjectId>610101214</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:27:12.260</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.260</ModifiedTimestamp>
+      <ColNames>idcategory</ColNames>
+      <RefTableId>1525580473</RefTableId>
+      <RefTableName>categories</RefTableName>
+      <RefKeyName>PK__categori__78C6B76249C41776</RefKeyName>
+      <RefColNames>idcategory</RefColNames>
+    </foreign-key>
+    <foreign-key id="235" parent="78" name="FKn1iu6bbj7othhwgfeyl7l1xol">
+      <ObjectId>786101841</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:33:20.337</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:33:20.337</ModifiedTimestamp>
+      <ColNames>idsupplier</ColNames>
+      <RefTableId>738101670</RefTableId>
+      <RefTableName>suppliers</RefTableName>
+      <RefKeyName>PK__supplier__43C586DDEB2E4CD8</RefKeyName>
+      <RefColNames>idsupplier</RefColNames>
+    </foreign-key>
+    <foreign-key id="236" parent="78" name="FK18q5lyfopr1a2f4bu1fmrpftb">
+      <ObjectId>594101157</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:27:12.257</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.257</ModifiedTimestamp>
+      <ColNames>idtax</ColNames>
+      <RefTableId>853578079</RefTableId>
+      <RefTableName>tax</RefTableName>
+      <RefKeyName>PK__tax__2A4169933B1779D4</RefKeyName>
+      <RefColNames>idtax</RefColNames>
+    </foreign-key>
+    <column id="237" parent="79" name="idrole">
+      <Position>1</Position>
+      <SequenceIdentity>1(5)</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="238" parent="79" name="role">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="239" parent="79" name="PK__roles__F324A06D72047947">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idrole</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="240" parent="79" name="PK__roles__F324A06D72047947">
+      <ObjectId>709577566</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.890</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.890</ModifiedTimestamp>
+      <ColNames>idrole</ColNames>
+      <UnderlyingIndexName>PK__roles__F324A06D72047947</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="241" parent="80" name="idshipping_unit">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="242" parent="80" name="address">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="243" parent="80" name="email">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="244" parent="80" name="shipping_unit_name">
+      <Position>4</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="245" parent="80" name="telephone">
+      <Position>5</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="246" parent="80" name="PK__shipping__8D88A8F40EF10661">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idshipping_unit</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="247" parent="80" name="UK_60m1xkydp8104s3x74uvgo5iw">
+      <Position>2</Position>
+      <ColNames>address</ColNames>
+      <Unique>1</Unique>
+      <Condition>[address] IS NOT NULL</Condition>
+    </index>
+    <index id="248" parent="80" name="UK_1qqybekgjb77js7gdf4l3v6su">
+      <Position>3</Position>
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+      <Condition>[email] IS NOT NULL</Condition>
+    </index>
+    <index id="249" parent="80" name="UK_328ie9f8hkxos9jj2egw38ks9">
+      <Position>4</Position>
+      <ColNames>telephone</ColNames>
+      <Unique>1</Unique>
+      <Condition>[telephone] IS NOT NULL</Condition>
+    </index>
+    <key id="250" parent="80" name="PK__shipping__8D88A8F40EF10661">
+      <ObjectId>741577680</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.890</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.890</ModifiedTimestamp>
+      <ColNames>idshipping_unit</ColNames>
+      <UnderlyingIndexName>PK__shipping__8D88A8F40EF10661</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="251" parent="81" name="idspecification">
+      <Position>1</Position>
+      <SequenceIdentity>1(74)</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="252" parent="81" name="parameter">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <column id="253" parent="81" name="specification_name">
+      <Position>3</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <column id="254" parent="81" name="idproduct">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="255" parent="81" name="PK__specific__412DD79080BC841F">
+      <Position>1</Position>
+      <ColNames>idspecification</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="256" parent="81" name="PK__specific__412DD79080BC841F">
+      <ObjectId>130099504</ObjectId>
+      <CreatedTimestamp>2023-07-19.21:44:22.107</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-19.21:44:22.107</ModifiedTimestamp>
+      <ColNames>idspecification</ColNames>
+      <UnderlyingIndexName>PK__specific__412DD79080BC841F</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="257" parent="81" name="FKakd00daqni2khhvio4guwvvt5">
+      <ObjectId>658101385</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:27:12.730</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:27:12.730</ModifiedTimestamp>
+      <ColNames>idproduct</ColNames>
+      <RefTableId>546100986</RefTableId>
+      <RefTableName>products</RefTableName>
+      <RefKeyName>PK__products__8D507424ABCB9105</RefKeyName>
+      <RefColNames>idproduct</RefColNames>
+    </foreign-key>
+    <column id="258" parent="82" name="idstatus">
+      <Position>1</Position>
+      <SequenceIdentity>1(3)</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="259" parent="82" name="status_name">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <column id="260" parent="82" name="type">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="261" parent="82" name="PK__status__EBF77C2DDD0AF179">
+      <Position>1</Position>
+      <ColNames>idstatus</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="262" parent="82" name="PK__status__EBF77C2DDD0AF179">
+      <ObjectId>1589580701</ObjectId>
+      <CreatedTimestamp>2023-07-19.18:34:07.227</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-19.18:34:07.227</ModifiedTimestamp>
+      <ColNames>idstatus</ColNames>
+      <UnderlyingIndexName>PK__status__EBF77C2DDD0AF179</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="263" parent="83" name="idsupplier">
+      <Position>1</Position>
+      <SequenceIdentity>1(2)</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="264" parent="83" name="address">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <column id="265" parent="83" name="email">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="266" parent="83" name="supplier_name">
+      <Position>4</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <column id="267" parent="83" name="telephone">
+      <Position>5</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="268" parent="83" name="PK__supplier__43C586DDEB2E4CD8">
+      <Position>1</Position>
+      <ColNames>idsupplier</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="269" parent="83" name="UK_q5uvp89ra4ksaty5ghyaw4kjr">
+      <Position>2</Position>
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+      <Condition>[email] IS NOT NULL</Condition>
+    </index>
+    <index id="270" parent="83" name="UK_fhrko0t7nem5374gdrlllq8uc">
+      <Position>3</Position>
+      <ColNames>telephone</ColNames>
+      <Unique>1</Unique>
+      <Condition>[telephone] IS NOT NULL</Condition>
+    </index>
+    <key id="271" parent="83" name="PK__supplier__43C586DDEB2E4CD8">
+      <ObjectId>754101727</ObjectId>
+      <CreatedTimestamp>2023-07-21.17:33:20.047</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-21.17:33:20.047</ModifiedTimestamp>
+      <ColNames>idsupplier</ColNames>
+      <UnderlyingIndexName>PK__supplier__43C586DDEB2E4CD8</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="272" parent="84" name="name">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="273" parent="84" name="principal_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="274" parent="84" name="diagram_id">
+      <Position>3</Position>
+      <SequenceIdentity>1(2)</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="275" parent="84" name="version">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="276" parent="84" name="definition">
+      <Position>5</Position>
+      <DataType>varbinary(max)|0s</DataType>
+    </column>
+    <index id="277" parent="84" name="PK__sysdiagr__C2B05B61A1053794">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>diagram_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="278" parent="84" name="UK_principal_name">
+      <Position>2</Position>
+      <ColNames>principal_id
+name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="279" parent="84" name="PK__sysdiagr__C2B05B61A1053794">
+      <ObjectId>1381579960</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:54.780</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:54.780</ModifiedTimestamp>
+      <ColNames>diagram_id</ColNames>
+      <UnderlyingIndexName>PK__sysdiagr__C2B05B61A1053794</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="280" parent="84" name="UK_principal_name">
+      <ObjectId>1397580017</ObjectId>
+      <CreatedTimestamp>2023-07-15.11:45:54.780</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:54.780</ModifiedTimestamp>
+      <ColNames>principal_id
+name</ColNames>
+      <UnderlyingIndexName>UK_principal_name</UnderlyingIndexName>
+    </key>
+    <column id="281" parent="85" name="idtax">
+      <Position>1</Position>
+      <SequenceIdentity>1(6)</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="282" parent="85" name="tax_percentage">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="283" parent="85" name="type">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="284" parent="85" name="PK__tax__2A4169933B1779D4">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idtax</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="285" parent="85" name="PK__tax__2A4169933B1779D4">
+      <ObjectId>869578136</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2023-07-15.11:45:38.897</CreatedTimestamp>
+      <ModifiedTimestamp>2023-07-15.11:45:38.897</ModifiedTimestamp>
+      <ColNames>idtax</ColNames>
+      <UnderlyingIndexName>PK__tax__2A4169933B1779D4</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <argument id="286" parent="86">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="287" parent="87" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="288" parent="87" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="289" parent="87" name="@version">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="290" parent="87" name="@definition">
+      <Position>4</Position>
+      <DataType>varbinary(max)|0s</DataType>
+    </argument>
+    <argument id="291" parent="88" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="292" parent="88" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="293" parent="88" name="@version">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="294" parent="88" name="@definition">
+      <Position>4</Position>
+      <DataType>varbinary(max)|0s</DataType>
+    </argument>
+    <argument id="295" parent="89" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="296" parent="89" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="297" parent="90" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="298" parent="90" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="299" parent="91" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="300" parent="91" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="301" parent="92" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="302" parent="92" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="303" parent="92" name="@new_diagramname">
+      <Position>3</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+  </database-model>
+</dataSource>
